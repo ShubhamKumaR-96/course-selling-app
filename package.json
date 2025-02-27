@@ -1,0 +1,17 @@
+{
+  "name": "course-selling-app",
+  "version": "1.0.0",
+  "description": "- initiliaze a new Nodejs.project\r - Add Express,jsonwebToken to its as a dependency\r - Create index.js\r - Add route skeleton for user login,signup,purchase a course,see course\r - Add routes for admin login,admin signup,create a course , delete a course, add a course content\r - Add middleaware for user and admin auth\r - Add a database (mongodb), use dotenv to store the database connection string\r - define the schema for user, Admin,Course,Purchase\r - Complete the routes for user login,signup,purchase a course,see course (Extra points - Uese express routing to better structure your routes)\r - Create the frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.11.0"
+  }
+}
