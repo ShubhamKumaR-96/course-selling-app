@@ -1,6 +1,7 @@
 const express = require('express'); // Import express correctly
 const userRouter = require('./routes/userRoutes');
 const courseRouter = require('./routes/courseRoutes');
+const adminRouter = require('./routes/adminRoutes');
 
 
 const app = express(); // Create an express app
@@ -9,8 +10,9 @@ const app = express(); // Create an express app
 app.use(express.json());
 
 // Mount the routers
-app.use('/api/v1/user', userRouter); // All user routes will be prefixed with /api/v1/user
-app.use('/api/v1/course', courseRouter); // All course routes will be prefixed with /api/v1/course
+app.use('/api/v1/user', userRouter); 
+app.use('/api/v1/course', courseRouter); 
+app.use('/api/v1/admin',adminRouter)
 
 // Start the server
 const PORT = 3000;
